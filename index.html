@@ -80,6 +80,7 @@
 			.content_desc{
 				width:100%;
 				background:#fff;
+				margin-top:60px;
 			}
 			.navbar-brand>img{
 				display:inline-block;
@@ -119,12 +120,27 @@
 			}
 			@media (max-width: 768px){
 				.jumbotron p.img_text{
-					font-size:32px;
+					font-size:28px;
 					margin-top:60px;
 				}
 				.btnDeploy{
 					margin:50px 0 70px 0;
 				}
+			}
+			.description{
+				max-width:620px;
+				margin: 0 auto;
+			}
+			.description p{
+				text-align:left;
+				font-size: 16px;
+				font-family: "OpenSans";
+				color: rgb( 34, 34, 34 );
+				line-height: 1.75;
+			}
+			.btnBlue{
+				margin: 40px 0 70px;
+				background: #0a026e;
 			}
   		</style>
   		<script>
@@ -157,8 +173,13 @@
 		  </div>
 		</div>
 		<div class="content_desc">
-			<div class="container">
-				
+			<div class="container center">
+				<img src="images/Salesforce.png" />
+				<div class="description">
+					<p>Cadalys Data Archive&#8482; is a powerful data archiving application enabling enterprises to archive older unused data out of Salesforce and into Heroku where it can be viewed read-only.</p>
+					<p>The solution is built on Salesforce and Heroku platforms. The UI is implemented on the Salesforce side, and provides robust and customizable archiving rules for standard and custom objects including attachments. Administrators can specify the child records that are automatically archived with their parents. Archived Salesforce data are retained in a Heroku Postgres SQL database. Heroku Connect is used for bi-directional synchronization between Salesforce and Heroku, and Lightning Connect displays the archived data in the Salesforce UI. A Salesforce widget enables users to search archived data from within Salesforce, and is implemented using the postgreSQL full text search engine.</p>
+					<a href="#" class="btnDeploy btnBlue"><span>Deploy to Heroku</span></a>
+				</div>
 			</div>
 		</div>
 	</body>
