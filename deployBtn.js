@@ -1,0 +1,1 @@
+var deployBtnLocation = "http://vk.com";

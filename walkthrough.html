@@ -7,8 +7,15 @@
   		<title>Cadalys</title>
   		<link href="css/bootstrap.min.css" rel="stylesheet">
   		<link href="css/styles.css" rel="stylesheet">
-  		<script src="js/jquery.js"></script>
+  		<script src="js/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="deployBtn.js"></script>
+		<script>
+			$(document).ready( function(){
+	            var deployHref = window.deployBtnLocation;
+	            $(".btnDeploy").attr("href",deployHref);
+	        });
+		</script>
 	</head>
 	<body>
 		<div class="navbar navbar-default navbar-static-top" role="navigation">
@@ -36,11 +43,6 @@
 		  </div>
 		</div>
 		<div class="content_desc">
-			<div class="container center">
-				
-			</div>
-		</div>
-		<div class="demo_video">
 			<div class="container center">
 				
 			</div>
