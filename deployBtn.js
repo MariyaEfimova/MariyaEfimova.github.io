@@ -1,1 +1,1 @@
-var deployBtnLocation = "http://vk.com";
+var deployBtnLocation = "#";
